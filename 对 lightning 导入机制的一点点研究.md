@@ -199,7 +199,7 @@ tiup ctl:v6.1.1 pd -u 127.0.0.1:2379 scheduler resume "balance-region-scheduler"
 tiup ctl:v6.1.1 pd -u 127.0.0.1:2379 scheduler resume "split-bucket-scheduler"
 ```
 
-1. 恢复config 的值。
+2. 恢复config 的值。
 
 ```go
 tiup ctl:v6.1.1 pd -u 127.0.0.1:2379 config set max-merge-region-keys 200000
@@ -211,7 +211,7 @@ tiup ctl:v6.1.1 pd -u 127.0.0.1:2379 config set max-pending-peer-count 64
 tiup ctl:v6.1.1 pd -u 127.0.0.1:2379 config set max-snapshot-count 64
 ```
 
-1. 恢复完成后，可以到 grafana 相关面板里面去检查一下调度是否在正常运行。
+3. 恢复完成后，可以到 grafana 相关面板里面去检查一下调度是否在正常运行。
 
 > 需要注意的是，以上步骤仅适用于 `tidb-lightning` 版本 < 6.2 的情况。
 >
